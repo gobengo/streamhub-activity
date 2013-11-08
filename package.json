@@ -1,0 +1,22 @@
+{
+  "name": "streamhub-activity",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH=lib node stream.js",
+    "test": "NODE_PATH=lib mocha tests/",
+    "hint": "./node_modules/jshint/bin/jshint lib"
+  },
+  "author": "",
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "jshint": "~2.3.0"
+  },
+  "dependencies": {
+    "request": "~2.27.0",
+    "html-to-text": "0.0.6",
+    "moment": "~2.4.0"
+  }
+}
