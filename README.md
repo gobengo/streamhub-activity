@@ -6,3 +6,5 @@ Stream from the StreamHub Activity Stream
 
     npm install
     npm start
+
+    node streamPost.js
