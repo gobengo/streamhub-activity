@@ -11,7 +11,7 @@ var opts = {
     network  : '',
     site     : '',
     secret   : '',
-    api_urn  : '',
+    apiUrn  : '',
     _timeout : 5000,
     authorizationHeader : null // if you pass a token, you don't have to pass a secret
 };
@@ -19,11 +19,11 @@ var opts = {
 /**
  * Stream.
  */
-activityStream = new ActivityStream('livefyre.com', opts);
+var activityStream = new ActivityStream('livefyre.com', opts);
 
 activityStream.on('error', function (err) {
     console.log('ActivityStream error', err);
-})
+});
 
 activityStream.on('end', function () {
     console.log('\nActivityStream ended', arguments);
@@ -39,9 +39,11 @@ activityStream.on('data', function (data) {
         uri    : 'http://requestb.in/1l61kox1',
         method : 'POST',
         json: data
-    }
+    };
     request(opts, function(e, res, body) {
-        if (e) console.error('Error while posting data : ', e, body);
+        if (e) {
+            console.error('Error while posting data : ', e, body);
+        }
     });
   }
 });

@@ -1,0 +1,29 @@
+{
+    "node": true,
+    "predef": [
+      "describe",
+      "it",
+      "before",
+      "beforeEach",
+      "afterEach"
+    ],
+    "indent": 2,
+    "eqeqeq": true,
+    "forin": true,
+    "immed": true,
+    "smarttabs": true,
+    "latedef": "nofunc",
+    "newcap": true,
+    "noarg": true,
+    "undef": true,
+    "unused": "vars",
+    "unparam": true,
+    "strict": false,
+    "sloppy": true,
+    "sub": true,
+    "nomen": true,
+    "curly": true,
+    "white": true,
+    "regexp": true,
+    "vars": true
+}
